@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script>
+    
+    function handlemouseover(){
+      document.getElementById("out").innerHTML="Waterproof and dustproof, Custom fit, Beautiful prints" ;
+    }
+    function handlekeydown(){
+      
+      document.getElementById("out2").innerHTML=""+parseInt(document.getElementById("name").value)*5/100;
+    }
+    function handlemouseleave(){
+      document.getElementById("out").innerHTML="product: Microwave Oven" ;
+    }
+  </script>
+</head>
+
+<body>
+<div class="container" >
+
+  <p class="lead" id="out" onmouseover="handlemouseover()" onmouseleave="handlemouseleave()"> product: Microwave Oven</p>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="name" placeholder="name@example.com" onkeydown="handlekeydown()">
+    <label for="floatingInput">Price</label>
+  </div>
+  </br>
+  
+   <p id="out2"></p>  
+
+</div>
+
+</body>
+
+</html>
