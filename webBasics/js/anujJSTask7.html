@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script>
+    
+    var str = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.org"; 
+    var patt1=/\bhttps/;
+    var str2="basgh"
+    var patt2=/.{5}/;
+    var patt3=/((a+b+)|(b+a+))&(.{5})/
+  var ans=""
+  if(str.match(patt1)==null)
+    ans+="patt1 not found, " 
+  else
+    ans+="patt1 found, "  
+  if(str2.match(patt3)==null)
+      ans+="patt2 not found";
+  else
+    ans+="patt2 found";
+
+document.write(ans); 
+
+  </script>
+</head>
+
+<body>
+<div class="container" >
+  
+  
+
+</div>
+
+</body>
+
+</html>

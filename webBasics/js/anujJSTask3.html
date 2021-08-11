@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script>
+   function si( p, r, t){
+     document.write(p*r*t/100);
+     document.write("</br>")
+     return p*r*t/100;
+   }
+   var pushit= function(myarr,obj){
+     myarr.push(obj);
+   }
+   var print=function(myarr){
+     for(i=0;i<myarr.length;i++){
+      document.write(myarr[i].name+" "+myarr[i].mail);
+     } 
+   }
+   var myarr=[];
+   var obj={"name":"anuj","mail":"x@gmail.com"};
+ 
+ document.write(si(100,10,2));
+ document.write("</br>")
+  pushit(myarr,obj);
+ print(myarr);
+
+
+  /*let fruits = ['Apple', 'Banana']
+
+  document.write(fruits.length)
+  document.write("</br>")
+
+  fruits.push('Orange')//Add an item to the end of an Array
+  document.write(fruits)
+  document.write("</br>")
+  
+  fruits.pop() // remove Orange (from the end)
+  document.write(fruits)
+  document.write("</br>")
+  
+  fruits.shift() // remove Apple from the front
+  document.write(fruits)
+  document.write("</br>")
+
+  fruits.unshift('Strawberry')// add to the front
+  document.write(fruits)
+  document.write("</br>")
+
+  document.write(fruits.indexOf("Strawberry"))
+  document.write("</br>")
+
+  fruits.splice(0, 1) // this is how to remove an item 2nd defines number of items to be removed
+  document.write(fruits)
+  document.write("</br>")*/
+</script>
+</head>
+
+<body>
+    </body>
+    </html>

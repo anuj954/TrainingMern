@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <nav><a src="C:\Users\d970676\Desktop\work\new recruits\html\anuj_caseStudy1\home.html">Home</a>   |   <a href="C:\Users\d970676\Desktop\work\new recruits\html\anuj_caseStudy1\feedback.html">Feedback</a>    |   
+        <a href="C:\Users\d970676\Desktop\work\new recruits\html\anuj_caseStudy1\about.html">About Us</a>   |   <a href="C:\Users\d970676\Desktop\work\new recruits\html\anuj_caseStudy1\contact.html">Contact Us</a> </nav>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Feedback Form</h1>
+        <br><br>
+        <form>
+            <label for="user">Full Name: </label>
+            <input type="text" required id="user" />
+            <br>
+            <br>
+            <label for="user">E-mail: </label>
+            <input type="text" required id="user" pattern=".{3,}" required title="please provide 3 characters"/>
+            <br>
+            <br>
+            <label >Password: </label>
+            <input type="Password" id="repass" required name="repass" pattern=".{6,13}" title="enter a password of length between 6 to 12" required/>
+            <br>
+            <br>
+            
+            <label for="user">Feedback: </label>
+            <textarea required id="user" height="50px" width="50px" required></textarea>
+            
+            <input type="submit"/>
+    </body>
+    </HTML>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script>
+    str1="hello"
+    str2="world"
+    str3="welcome"
+    document.write(str1.concat(str2).concat(str3));
+    document.write("</br>");
+    str="peter sam";
+    for(i=0;i<str.length;i++)
+      document.write(str.charCodeAt(i)+" ");
+    str = "Apple, Banana, Kiwi";
+    document.write(str.slice(-12,-6))//considered from end
+    document.write(str.slice(-15,0))//both should be negative and abs(first) should be more then only print
+    
+    document.write("</br>");
+    str=str.replace("Banana","Pear")// assignment is imporatant. By default, the replace() method replaces only the first match:
+    document.write(str);
+
+//    To replace case insensitive, use a regular expression with an /i flag
+document.write("</br>");
+str=str.replace(/pear/i,"Banana");//use g flag for replacing all matches
+document.write(str);
+    document.write("</br>");
+    document.write(str.substring(3, 13)+","+str.substr(7)+","+str.substr(-1)+"");//second parameter specifies the length of the extracted part if it is smaller than the first
+    
+    document.write("</br>");
+//    trim() method removes whitespace from both sides of a string:
+
+    /*  str="quick";
+    document.write(str+" test");
+    document.write(str[1]+" "+str.charAt(2)+" "+str.charCodeAt(2)+" "+str.concat(" hello concat")+" "+str);
+    document.write("</br>");
+    document.write("break");
+    document.write(str.length);
+//alert("Hello world")
+*/
+</script>
+</head>
+
+<body>
+    </body>
+    </html>

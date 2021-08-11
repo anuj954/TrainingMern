@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <base href="C:\Users\d970676\Desktop\work\new recruits\html\resources">
+    <link type=text/css rel="stylesheet" href="style.css">
+    <script>
+        function sort() {  
+            var geek_list, i, run, li, stop;
+            geek_list = document.getElementById("sortlist");
+            run = true;
+            while (run) {
+                run = false;
+                li = geek_list.getElementsByTagName("li");
+                for (i = 0; i < (li.length - 1); i++) {
+                    stop = false;
+                    console.log(li[i].innerHTML.toLowerCase().split(" ")[1]);
+                    if (li[i].innerHTML.toLowerCase().split(" ")[1] > 
+                        li[i + 1].innerHTML.toLowerCase().split(" ")[1]) {
+                        stop = true;
+                        break;
+                    }
+                }
+                if (stop) {
+                    li[i].parentNode.insertBefore(
+                            li[i + 1], li[i]);
+                    run = true;
+                }
+            }
+            console.log(geek_list);
+        document.innerHTML+=geek_list;     
+        }
+    </script>
+<head>
+
+</head>
+<body>
+<p>The quick brown fox jumps over the fence</p>
+<p>The fence was not tall enough to stop the fox</p>
+
+<ul>
+    <li>apple</li>
+    <li>mango</li>
+    <li>banana</li>
+    <li>papaya</li>
+    <li>pineapple</li>
+</ul>
+
+
+<ol id="sortlist">
+    <li>Peter 72</li>
+    <li>william 34</li>
+    <li>eager 22</li>
+    <li>chandler 33</li>
+    <li>ross 43</li>
+</ol>
+<br>
+  
+    <div>
+        <button style="color: crimson;"
+            onclick="sort()">
+            Click Here To Sort
+        </button>
+    </div>
+</body>
+</html>

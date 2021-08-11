@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script>
+    function handlesubmit(){
+      name=document.getElementById("name").value
+      mail=document.getElementById("email").value
+      password=document.getElementById("repass").value
+      var str=''
+      if(name.length<=5)
+        str=str+" enter more than 5 characters in name field"
+      if(password.length<6||password.length>11)
+        str=str+"password length should be between 6-11"
+      document.getElementById("out").innerHTML="</br>"+str;
+    }
+  </script>
+</head>
+
+<body>
+<div class="container" >
+
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="name" placeholder="name@example.com">
+    <label for="floatingInput">Name</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="repass" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  </br>
+  <input type="submit" name="Submit" id="sub" onclick="handlesubmit()"/>
+  
+  <p class="lead" id="out"> </p>
+  </form>
+</div>
+
+</body>
+
+</html>

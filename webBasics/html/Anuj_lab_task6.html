@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <link type=text/css rel="stylesheet" href="style.css">    
+<head>
+
+</head>
+<body>
+    <form>
+<label for="user">User Name: </label>
+<input type="text" required id="user" pattern=".{3,}" title="please provide 3 characters"/>
+<br>
+<br>
+<label for="user">E-mail: </label>
+<input type="text" required id="user" pattern=".{3,}" required title="please provide 3 characters"/>
+<br>
+<br>
+<label >Password: </label>
+<input type="Password" id="repass" required name="repass" pattern=".{6,13}" title="enter a password of length between 6 to 12" required/>
+<br>
+<br>
+Select your Country 
+<Select name='dropdown'>
+        <option value="India">India</option>
+        <option value="India">UK</option>
+        <option value="India">France</option>
+        <option value="India">Russia</option>
+        <option value="India">Japan</option>
+    </Select>
+
+    <br>
+<br>
+<input type="submit"/>
+</form>
+</body>
+</html>

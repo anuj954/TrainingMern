@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #trans{
+                position: relative;
+                left: 200px;
+                top:200px;
+                height:100px;
+                width:200px;
+            }
+            ul li{
+                transition: font-size 2s, background-color 2s;
+                transition-delay: 1s;
+                transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            }
+            .fixedbox{
+              position: fixed;
+              top:0px;
+              right:0px;
+              height:50px;
+              width:100px;
+              background-color: cornflowerblue;
+            }
+            .absbox{
+                background-color: crimson;
+                position:absolute;
+                width:50px;
+                height:50px;
+                top:100px;
+                right:50px;
+            }
+
+            #stibox{
+                background-color: orange;
+                position:sticky;
+                width:50px;
+                height:50px;
+            }
+ul li:hover {
+    color:crimson;
+    font-size: 40px;
+    background-color: cornsilk;
+
+}
+ /*ol li:first-child{
+    color:darkblue;
+    font-weight: 200;
+    background-color: darkgray;
+}
+ol li:last-child{
+    color:darkblue;
+    font-weight: 200;
+    background-color: darkgray;
+}
+a:visited{
+    color:blueviolet;
+}*/
+        </style>
+    </head>
+    <body>
+        <h1>WELCOME</h1>
+        <div id="trans">        
+        <p>Inside Paragraph </p>
+        <ul >
+            <li>Peter 72</li>
+            <li>william 34</li>
+            <li>eager 22</li>
+            <li>chandler 33</li>
+            <li>ross 43</li>
+        </ul>
+        </div>
+        
+        <div class="fixedbox">
+            this is fixed at the right bottom
+        </div>
+        <div class="absbox">absolute box</div>
+        <div id="stibox">sticky box</div>
+    </body>
+</html>

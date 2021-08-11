@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <link type=text/css rel="stylesheet" href="style.css">    
+<head>
+
+</head>
+<body>
+<div>
+    <form oninput='out.value=parseInt(p.value)+parseInt(p.value)*parseInt(r.value)*parseInt(t.value)/100' >
+     <label for="principal">Pricipal amount: </label>
+     <input type="number" autofocus placeholder="name" name="p"/>
+     <br>
+     <br>
+     <label for="roi">Rate: </label>
+     <input type="number" name="r"/>
+     <br>
+     <br>
+     <label for="t" >Time: </label>
+     <input type="number" name="t"/>
+     <br>
+     <br>
+     <output name="out" for="number"></output>
+    </form> 
+</div> 
+</body>
+</html>
